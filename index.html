@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <h1>Color Palette Generator</h1>
+    <div>
+      <h2>Usage</h2>
+      <p>Palette size selects how many colors the palette will have.</p>
+      <p>
+        Hue, Saturation, and Lightness are equation fields which accepts any
+        valid JavaScript code, including regular numbers. Hue is measured in
+        degrees, while Saturation and Lightness are measured in percentages.
+      </p>
+    </div>
+
+    <div id="legend">
+      <h2>Legend</h2>
+      <ul>
+        <li>Palette size: <span class="code">size</span></li>
+        <li>Color index (0 indexed): <span class="code">x</span></li>
+        <li>
+          Normalized color index (Color index / (Palette size - 1)):
+          <span class="code">i</span>
+        </li>
+        <li>Lightness: <span class="code">l</span></li>
+        <li>Chroma: <span class="code">c</span></li>
+        <li>Hue: <span class="code">h</span></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Tool</h2>
+      <p class="warning">
+        Warning: The equation inputs are not sanitized. Do not paste in any code
+        from a source you don't completly trust!
+      </p>
+      <div id="parameters">
+        <label for="palette-size" class="label">
+          Palette size
+          <input
+            type="number"
+            name=""
+            id="palette-size"
+            value="7"
+            step="1"
+            min="1"
+            max="16"
+        /></label>
+
+        <label for="lightness-equation" class="label">
+          Lightness
+          <input
+            type="text"
+            name=""
+            id="lightness-equation"
+            value="40+(i-0.5)*60"
+          />
+        </label>
+
+        <label for="chroma-equation" class="label">
+          Chroma
+          <input
+            type="text"
+            name=""
+            id="chroma-equation"
+            value="(Math.log10(i*2+0.2)+1-i)*50"
+          />
+        </label>
+
+        <label for="hue-equation" class="label">
+          Hue
+          <input type="text" name="" id="hue-equation" value="160-(i-0.5)*50" />
+        </label>
+
+        <button id="add-colors">Add row to palette</button>
+      </div>
+
+      <div id="preview-container"></div>
+      <div id="palette-container"></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
