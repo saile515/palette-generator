@@ -202,6 +202,11 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.5.tgz#a6ce3e556e00fd9895dd872dd172ad0d4bd687f4"
   integrity sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==
 
+colorjs.io@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/colorjs.io/-/colorjs.io-0.5.0.tgz#b1034184b4812b54e28c5082029fbd8ca53aa532"
+  integrity sha512-qekjTiBLM3F/sXKks/ih5aWaHIGu+Ftel0yKEvmpbKvmxpNOhojKgha5uiWEUOqEpRjC1Tq3nJRT7WgdBOxIGg==
+
 esbuild@^0.20.1:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.20.2.tgz#9d6b2386561766ee6b5a55196c6d766d28c87ea1"
