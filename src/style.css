@@ -49,6 +49,10 @@ h2 {
 .color {
   width: 4rem;
   height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
 }
 
 #legend ul {

@@ -58,7 +58,7 @@
             type="text"
             name=""
             id="lightness-equation"
-            value="40+(i-0.5)*60"
+            value="0.6*i**1.5+0.2"
           />
         </label>
 
@@ -68,13 +68,13 @@
             type="text"
             name=""
             id="chroma-equation"
-            value="(Math.log10(i*2+0.2)+1-i)*50"
+            value="-0.2*i**2+0.2*i+0.15"
           />
         </label>
 
         <label for="hue-equation" class="label">
           Hue
-          <input type="text" name="" id="hue-equation" value="160-(i-0.5)*50" />
+          <input type="text" name="" id="hue-equation" value="130-(i-0.5)*30" />
         </label>
 
         <button id="add-colors">Add row to palette</button>
