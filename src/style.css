@@ -9,6 +9,15 @@ h2 {
   margin: 0;
 }
 
+button {
+  color: #000000d0;
+  background-color: #cba6f7;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  width: max-content;
+}
+
 .warning {
   color: #f38ba8;
   font-weight: bold;
@@ -74,7 +83,7 @@ h2 {
   background-color: #181825;
   color: #a6adc8;
   padding: 0.25rem 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   width: min-content;
   font: monospace;
 }
