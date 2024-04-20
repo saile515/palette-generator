@@ -43,6 +43,10 @@
         from a source you don't completely trust!
       </p>
       <div id="parameters">
+        <label for="name">
+          Palette name
+          <input type="text" name="" id="name" value="Color Palette" />
+        </label>
         <label for="palette-size" class="label">
           Palette size
           <input
@@ -81,6 +85,15 @@
         </label>
 
         <button id="add-colors">Add row to palette</button>
+
+        <h3>Export</h3>
+        <div class="flex-row">
+          <label for="export-type"> Format </label>
+          <select id="export-type">
+            <option value="kpl">Krita palette (.kpl)</option>
+          </select>
+          <button id="export">Export</button>
+        </div>
       </div>
 
       <div id="preview-container"></div>

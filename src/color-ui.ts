@@ -50,7 +50,9 @@ export const create_palette_row = (
     const hue_value = eval(hue_equation);
 
     row.push(
-      new Color("oklch", [lightness_value, chroma_value, hue_value]).to("sRGB"),
+      new Color("oklch", [lightness_value, chroma_value, hue_value])
+        .to("sRGB")
+        .toGamut({ space: "sRGB" }),
     );
   }
 

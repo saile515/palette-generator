@@ -5,11 +5,13 @@ body {
   padding: 2rem;
 }
 
-h2 {
+h2,
+h3 {
   margin: 0;
 }
 
-button {
+button,
+select {
   color: #000000d0;
   background-color: #cba6f7;
   border: none;
@@ -86,4 +88,10 @@ button {
   border-radius: 0.25rem;
   width: min-content;
   font: monospace;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
